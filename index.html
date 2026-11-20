@@ -3,22 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New Imam Designers — Trending Women's Wear in Allagadda</title>
+  <title>New Imam Designers | Allagadda Best Women's Wear</title>
   <style>
     :root {
-      --bg: #fdf8f4;
+      --bg: #fdf6f0;
       --surface: #ffffff;
-      --surface-warm: #fff7f2;
-      --text: #221419;
-      --muted: #69535a;
-      --primary: #9e1b46;
-      --primary-dark: #7a1234;
-      --gold: #b87b14;
-      --gold-soft: #fdf2dc;
-      --rose-soft: #fce8ef;
-      --border: #ead8d0;
-      --radius: 16px;
-      --shadow: 0 10px 28px rgba(158, 27, 70, 0.07);
+      --text: #1c1718;
+      --muted: #5b5254;
+      --accent: #8b1538;
+      --accent-dark: #6c0f2b;
+      --accent-soft: #fae8ee;
+      --gold: #b07d1c;
+      --border: #eadad3;
+      --radius: 18px;
     }
 
     * {
@@ -33,234 +30,221 @@
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: var(--text);
-      line-height: 1.65;
       background-color: var(--bg);
       background-image:
-        radial-gradient(circle at 12% 8%, rgba(184, 123, 20, 0.08) 0, transparent 32%),
-        radial-gradient(circle at 88% 18%, rgba(158, 27, 70, 0.07) 0, transparent 35%),
-        repeating-linear-gradient(
-          45deg,
-          rgba(158, 27, 70, 0.03) 0px,
-          rgba(158, 27, 70, 0.03) 1px,
-          transparent 1px,
-          transparent 18px
-        ),
-        repeating-linear-gradient(
-          -45deg,
-          rgba(184, 123, 20, 0.03) 0px,
-          rgba(184, 123, 20, 0.03) 1px,
-          transparent 1px,
-          transparent 18px
-        );
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(255, 250, 247, 0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 2px solid var(--gold-soft);
-    }
-
-    .nav-container {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 0.95rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .brand {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: var(--primary);
-      letter-spacing: 0.2px;
-    }
-
-    .brand span {
-      display: block;
-      font-size: 0.74rem;
-      font-weight: 600;
-      color: var(--gold);
+        linear-gradient(45deg, rgba(139, 21, 56, 0.03) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(139, 21, 56, 0.03) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(139, 21, 56, 0.03) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(139, 21, 56, 0.03) 75%);
+      background-size: 28px 28px;
+      background-position: 0 0, 0 14px, 14px -14px, -14px 0;
+      color: var(--text);
+      line-height: 1.6;
     }
 
     nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 14px 20px;
       display: flex;
-      gap: 1.25rem;
-      font-size: 0.94rem;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    /* Hero */
-    .hero {
-      max-width: 1140px;
-      margin: 2rem auto 0;
-      padding: 0 1.25rem;
-    }
-
-    .hero-card {
-      background:
-        linear-gradient(125deg, rgba(158, 27, 70, 0.07) 0%, rgba(255, 255, 255, 0.96) 48%, rgba(184, 123, 20, 0.1) 100%);
-      border: 1px solid var(--border);
-      border-top: 4px solid var(--primary);
-      border-radius: 22px;
-      padding: 2.5rem 2rem;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-split {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      flex-wrap: wrap;
       align-items: center;
-      gap: 2rem;
+      justify-content: space-between;
+      gap: 14px;
     }
 
-    .badge {
+    .brand-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--accent);
+      text-decoration: none;
+      display: block;
+    }
+
+    .brand-sub {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 44px;
+      box-shadow: 0 8px 24px rgba(28, 23, 24, 0.04);
+    }
+
+    .pill {
       display: inline-block;
-      background: var(--gold-soft);
-      color: var(--gold);
-      border: 1px solid rgba(184, 123, 20, 0.28);
-      font-size: 0.82rem;
+      background: #fdf2dc;
+      color: #8c5e08;
       font-weight: 700;
-      padding: 0.35rem 0.9rem;
+      font-size: 0.85rem;
+      padding: 6px 14px;
       border-radius: 999px;
-      margin-bottom: 1rem;
+      margin-bottom: 14px;
     }
 
     .hero h1 {
-      font-size: clamp(1.85rem, 4vw, 2.8rem);
-      line-height: 1.18;
-      margin-bottom: 1rem;
-      color: var(--text);
+      font-size: clamp(1.9rem, 3.6vw, 2.75rem);
+      line-height: 1.15;
+      margin-bottom: 14px;
     }
 
     .hero p {
       color: var(--muted);
       font-size: 1.02rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 22px;
     }
 
-    .hero-media img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      border-radius: 14px;
-      border: 2px solid var(--gold-soft);
-      display: block;
-    }
-
-    .btn-group {
+    .hero-actions {
       display: flex;
-      gap: 0.8rem;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 440px;
+    }
+
+    .action-row {
+      display: flex;
       flex-wrap: wrap;
+      gap: 12px;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0.72rem 1.25rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 11px 18px;
       border-radius: 10px;
-      font-weight: 600;
-      font-size: 0.92rem;
+      border: 1px solid transparent;
       cursor: pointer;
-      border: none;
-      transition: transform 0.15s ease, background-color 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
+      transition: 0.15s ease;
     }
 
     .btn-primary {
-      background: var(--primary);
+      background: var(--accent);
       color: #fff;
     }
 
     .btn-primary:hover {
-      background: var(--primary-dark);
+      background: var(--accent-dark);
     }
 
-    .btn-secondary {
+    .btn-outline {
       background: #fff;
       color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 14px;
       border: 1px solid var(--border);
+      display: block;
     }
 
-    /* Sections */
-    section {
-      max-width: 1140px;
-      margin: 3.5rem auto;
-      padding: 0 1.25rem;
+    .section-block {
+      margin-bottom: 46px;
     }
 
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.65rem;
-      border-bottom: 1px dashed var(--border);
+    .section-title {
+      font-size: 1.85rem;
+      color: var(--accent);
+      margin-bottom: 6px;
     }
 
-    .section-header h2 {
-      font-size: 1.75rem;
-      color: var(--primary);
-    }
-
-    .section-header p {
+    .section-subtitle {
       color: var(--muted);
-      font-size: 0.95rem;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
     }
 
-    /* Filter Pills */
+    .section-subtitle code {
+      background: #f7ecee;
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+
     .filters {
       display: flex;
-      gap: 0.5rem;
       flex-wrap: wrap;
-      margin-bottom: 1.5rem;
+      gap: 10px;
+      margin-bottom: 22px;
     }
 
     .filter-btn {
-      padding: 0.45rem 0.95rem;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--surface);
+      background: #fff;
       color: var(--text);
-      font-size: 0.88rem;
-      font-weight: 600;
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
       cursor: pointer;
     }
 
-    .filter-btn.active,
-    .filter-btn:hover {
-      background: var(--primary);
+    .filter-btn.active {
+      background: var(--accent);
       color: #fff;
-      border-color: var(--primary);
+      border-color: var(--accent);
     }
 
-    /* Collection Grid */
-    .grid {
+    .grid-2 {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
     }
 
     .card {
@@ -268,635 +252,608 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      box-shadow: 0 6px 18px rgba(28, 23, 24, 0.03);
+    }
+
+    .card-body {
+      padding: 22px;
     }
 
     .photo-slot {
-      width: 100%;
-      height: 190px;
-      background-color: var(--surface-warm);
-      background-image: radial-gradient(rgba(158, 27, 70, 0.14) 1px, transparent 1px);
+      min-height: 210px;
+      background: #fdf4f6;
+      background-image: radial-gradient(rgba(139, 21, 56, 0.14) 1px, transparent 1px);
       background-size: 14px 14px;
       border-bottom: 1px solid var(--border);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
       text-align: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-
-    .photo-slot strong {
-      color: var(--primary);
-      font-size: 0.92rem;
-      margin-bottom: 0.25rem;
+      padding: 18px;
     }
 
     .photo-slot img {
       width: 100%;
-      height: 100%;
+      height: 210px;
       object-fit: cover;
       display: block;
     }
 
-    .card-body {
-      padding: 1.3rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
-      gap: 1rem;
+    .slot-title {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 4px;
     }
 
-    .card-tag {
-      font-size: 0.74rem;
-      font-weight: 700;
+    .slot-sub {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      letter-spacing: 0.6px;
       color: var(--gold);
+      margin-bottom: 6px;
     }
 
     .card h3 {
-      font-size: 1.15rem;
-      margin: 0.25rem 0 0.4rem;
+      font-size: 1.3rem;
+      margin-bottom: 6px;
     }
 
-    .price {
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 0.98rem;
-      margin-bottom: 0.5rem;
+    .price-tag {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
     }
 
     .card p {
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.96rem;
+      margin-bottom: 14px;
     }
 
-    .card-footer {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      padding-top: 0.85rem;
+    .divider {
+      border: 0;
       border-top: 1px solid var(--border);
-      font-size: 0.85rem;
+      margin: 14px 0;
     }
 
-    .branch-actions {
+    .stock-label {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .wa-row {
       display: flex;
-      gap: 0.5rem;
       flex-wrap: wrap;
+      gap: 10px;
     }
 
-    .inquire-link {
-      color: var(--primary);
-      background: var(--rose-soft);
-      border: none;
-      border-radius: 8px;
-      padding: 0.45rem 0.75rem;
-      font-weight: 600;
-      font-size: 0.82rem;
-      cursor: pointer;
-    }
-
-    .inquire-link:hover {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* Visit & Maps */
-    .visit-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 1.25rem;
-    }
-
-    .info-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .info-box h3 {
-      margin-bottom: 0.45rem;
-      font-size: 1.15rem;
-    }
-
-    .info-box p + p {
-      margin-top: 0.35rem;
-    }
-
-    .branch-photo {
-      height: 175px;
+    .btn-wa {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 9px 14px;
       border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .btn-wa:hover {
+      background: #f5d6e0;
+    }
+
+    .combo-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .combo-price {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .branch-meta {
+      margin-bottom: 12px;
+      font-size: 0.96rem;
+    }
+
+    .branch-meta p {
+      margin-bottom: 6px;
+    }
+
+    .map-card {
+      margin-top: 14px;
+      border-radius: 12px;
       border: 1px solid var(--border);
+      background: #eef4f8;
       overflow: hidden;
     }
 
-    .map-frame iframe {
+    .map-card iframe {
       width: 100%;
-      height: 200px;
+      height: 185px;
       border: 0;
-      border-radius: 10px;
       display: block;
     }
 
-    .muted {
-      color: var(--muted);
-      font-size: 0.93rem;
+    .map-footer {
+      padding: 10px 12px;
+      background: #eef4f8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
     }
 
-    /* About Imam Designer / Story */
-    .story-panel {
-      background: linear-gradient(145deg, #ffffff 0%, #fff6f2 100%);
-      border: 1px solid var(--border);
-      border-left: 5px solid var(--gold);
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 2rem;
-      align-items: start;
+    .btn-map {
+      background: #fff;
+      color: #1a56db;
+      border: 1px solid #c7d7fe;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
     }
 
-    .story-copy h3 {
-      font-size: 1.35rem;
-      color: var(--primary);
-      margin-bottom: 0.75rem;
-    }
-
-    .story-copy p + p {
-      margin-top: 0.85rem;
-      color: var(--muted);
-    }
-
-    .story-points {
-      list-style: none;
-      display: grid;
-      gap: 0.85rem;
-    }
-
-    .story-points li {
+    .about-grid {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 0.95rem 1.1rem;
-      font-size: 0.93rem;
-      color: var(--muted);
+      border-left: 5px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
     }
 
-    .story-points strong {
-      display: block;
-      color: var(--text);
-      margin-bottom: 0.2rem;
-      font-size: 0.98rem;
+    .contact-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .contact-list a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+
+    .call-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 260px;
+    }
+
+    .milestone-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .milestone-box {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      background: #fffdfb;
+    }
+
+    .milestone-box h4 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .milestone-box p {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin: 0;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1.25rem;
       color: var(--muted);
-      font-size: 0.88rem;
-      border-top: 2px solid var(--gold-soft);
-      background: var(--surface);
+      font-size: 0.92rem;
+      padding: 24px 16px 40px;
+      border-top: 1px solid var(--border);
+      background: #fff;
     }
 
-    @media (max-width: 640px) {
-      .hero-media img {
-        height: 230px;
+    @media (max-width: 820px) {
+      .hero,
+      .grid-2,
+      .about-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="nav-container">
-      <a href="#" class="brand">
-        New Imam Designers
-        <span>Allagadda • Two Branches</span>
-      </a>
-      <nav>
-        <a href="#collections">Collections</a>
-        <a href="#offers">Combo Offers</a>
-        <a href="#visit">Branches &amp; Maps</a>
-        <a href="#about">About Us</a>
-      </nav>
+  <nav>
+    <div class="nav-inner">
+      <div>
+        <a href="#" class="brand-name">New Imam Designers</a>
+        <span class="brand-sub">Allagadda • Two Branches</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#combos">Combo Offers</a></li>
+        <li><a href="#branches">Branches &amp; Maps</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero-card hero-split">
-        <div class="hero-text">
-          <span class="badge">Allagadda Best Women’s Wear</span>
-          <h1>Festive Styles &amp; Everyday Collections</h1>
-          <p>
-            Explore Sharara dresses, Mal Chanderi &amp; Vichitra silk Anarkalis, Half-Sarees,
-            party wear, and budget-friendly daily sets across our two Allagadda branches.
-          </p>
-          <div class="btn-group">
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <span class="pill">Allagadda Best Women's Wear</span>
+        <h1>Festive Styles &amp; Everyday Collections</h1>
+        <p>
+          Explore Sharara dresses, Mal Chanderi &amp; Vichitra silk Anarkalis, Half-Sarees, party wear, and budget-friendly daily sets across our two Allagadda branches.
+        </p>
+        <div class="hero-actions">
+          <div class="action-row">
             <a href="#collections" class="btn btn-primary">Explore the Collection</a>
-            <a href="#visit" class="btn btn-secondary">Branches &amp; Maps</a>
-            <a href="https://www.youtube.com/@ImamdesignerALLAGADDA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <a href="#branches" class="btn btn-outline">Branches &amp; Maps</a>
+          </div>
+          <div class="action-row">
+            <a href="https://www.youtube.com/@ImamdesignerALLAGADDA-jb" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
               YouTube Shorts
             </a>
-            <a href="https://www.instagram.com/new_imamdesigner_allagadda/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <a href="https://www.instagram.com/new_imamdesigner_allagadda/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
               Instagram
             </a>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="shop1.png" alt="New Imam Designers storefront and dress display in Allagadda" />
-        </div>
       </div>
-    </div>
-
-    <!-- Collections Section (Add dress photos anytime) -->
-    <section id="collections">
-      <div class="section-header">
-        <div>
-          <h2>Featured Collections</h2>
-          <p>Add dress photos anytime by replacing the placeholder inside any .photo-slot with &lt;img src="your-dress.png" alt="..."&gt;.</p>
-        </div>
+      <div class="hero-media">
+        <img src="shop1.png" alt="New Imam Designers shop front in Allagadda" />
       </div>
+    </section>
 
-      <div class="filters" role="group" aria-label="Filter collections">
+    <!-- Featured Collections -->
+    <section id="collections" class="section-block">
+      <h2 class="section-title">Featured Collections</h2>
+      <p class="section-subtitle">
+        Add dress photos anytime by replacing the placeholder inside any <code>.photo-slot</code> with <code>&lt;img src="your-dress.png" alt="..."&gt;</code>.
+      </p>
+
+      <div class="filters" role="tablist" aria-label="Filter dress collections">
         <button class="filter-btn active" data-filter="all">All Styles</button>
         <button class="filter-btn" data-filter="festive">Festive &amp; Occasion</button>
         <button class="filter-btn" data-filter="party">Party &amp; Trendy</button>
         <button class="filter-btn" data-filter="daily">Daily &amp; Special</button>
       </div>
 
-      <div class="grid" id="collectionGrid">
-        <article class="card" data-category="festive">
+      <div class="grid-2">
+        <article class="card collection-item" data-category="festive">
           <div class="photo-slot">
-            <!-- Add dress photo later: <img src="sharara-dress.png" alt="Sharara Dresses" /> -->
-            <strong>Dress Photo Slot: Sharara Dresses</strong>
-            <span>Ready to add dress photo later</span>
+            <div class="slot-title">Dress Photo Slot: Sharara Dresses</div>
+            <div class="slot-sub">Ready to add dress photo later</div>
           </div>
           <div class="card-body">
-            <div>
-              <span class="card-tag">Festive &amp; Occasion</span>
-              <h3>Sharara Dresses</h3>
-              <div class="price">₹1,400 – ₹2,000</div>
-              <p>Statement sharara ensembles crafted for celebrations, family gatherings, and special events.</p>
-            </div>
-            <div class="card-footer">
-              <span>Check stock by branch:</span>
-              <div class="branch-actions">
-                <button class="inquire-link" data-item="Sharara Dresses" data-branch="Branch 1 (CSI Church)">Branch 1 WhatsApp</button>
-                <button class="inquire-link" data-item="Sharara Dresses" data-branch="Branch 2 (Srinivas Nagar)">Branch 2 WhatsApp</button>
-              </div>
+            <div class="eyebrow">Festive &amp; Occasion</div>
+            <h3>Sharara Dresses</h3>
+            <div class="price-tag">As per design</div>
+            <p>Festive sharara sets and flared occasion styles crafted for celebrations and family events.</p>
+            <hr class="divider" />
+            <div class="stock-label">Check stock by branch:</div>
+            <div class="wa-row">
+              <a class="btn-wa" href="https://wa.me/919966576087?text=Hi%20New%20Imam%20Designers%20(Branch%201),%20please%20share%20Sharara%20Dresses%20stock." target="_blank" rel="noopener noreferrer">Branch 1 WhatsApp</a>
+              <a class="btn-wa" href="https://wa.me/919912773809?text=Hi%20New%20Imam%20Designers%20(Branch%202),%20please%20share%20Sharara%20Dresses%20stock." target="_blank" rel="noopener noreferrer">Branch 2 WhatsApp</a>
             </div>
           </div>
         </article>
 
-        <article class="card" data-category="festive">
+        <article class="card collection-item" data-category="festive">
           <div class="photo-slot">
-            <!-- Add dress photo later: <img src="anarkali-dress.png" alt="Anarkali Dresses" /> -->
-            <strong>Dress Photo Slot: Anarkali Dresses &amp; Sets</strong>
-            <span>Ready to add dress photo later</span>
+            <div class="slot-title">Dress Photo Slot: Anarkali Dresses &amp; Sets</div>
+            <div class="slot-sub">Ready to add dress photo later</div>
           </div>
           <div class="card-body">
-            <div>
-              <span class="card-tag">Festive &amp; Occasion</span>
-              <h3>Anarkali Dresses &amp; Sets</h3>
-              <div class="price">₹1,000 – ₹2,000 (Select sets ₹699–₹799)</div>
-              <p>Graceful Anarkali styles in Mal Chanderi and Vichitra silk fabrics for festive wear.</p>
-            </div>
-            <div class="card-footer">
-              <span>Check stock by branch:</span>
-              <div class="branch-actions">
-                <button class="inquire-link" data-item="Anarkali Dresses" data-branch="Branch 1 (CSI Church)">Branch 1 WhatsApp</button>
-                <button class="inquire-link" data-item="Anarkali Dresses" data-branch="Branch 2 (Srinivas Nagar)">Branch 2 WhatsApp</button>
-              </div>
+            <div class="eyebrow">Festive &amp; Occasion</div>
+            <h3>Anarkali Dresses &amp; Sets</h3>
+            <div class="price-tag">As per design</div>
+            <p>Graceful Mal Chanderi and Vichitra silk Anarkalis and coordinated sets for festive wear.</p>
+            <hr class="divider" />
+            <div class="stock-label">Check stock by branch:</div>
+            <div class="wa-row">
+              <a class="btn-wa" href="https://wa.me/919966576087?text=Hi%20New%20Imam%20Designers%20(Branch%201),%20please%20share%20Anarkali%20Dresses%20stock." target="_blank" rel="noopener noreferrer">Branch 1 WhatsApp</a>
+              <a class="btn-wa" href="https://wa.me/919912773809?text=Hi%20New%20Imam%20Designers%20(Branch%202),%20please%20share%20Anarkali%20Dresses%20stock." target="_blank" rel="noopener noreferrer">Branch 2 WhatsApp</a>
             </div>
           </div>
         </article>
 
-        <article class="card" data-category="festive">
+        <article class="card collection-item" data-category="festive">
           <div class="photo-slot">
-            <!-- Add dress photo later: <img src="half-saree.png" alt="Half-Sarees" /> -->
-            <strong>Dress Photo Slot: Half-Sarees</strong>
-            <span>Ready to add dress photo later</span>
+            <div class="slot-title">Dress Photo Slot: Half-Sarees</div>
+            <div class="slot-sub">Ready to add dress photo later</div>
           </div>
           <div class="card-body">
-            <div>
-              <span class="card-tag">Traditional Wear</span>
-              <h3>Half-Sarees</h3>
-              <div class="price">As per design</div>
-              <p>Classic half-saree collections suited for festive occasions and traditional ceremonies.</p>
-            </div>
-            <div class="card-footer">
-              <span>Check stock by branch:</span>
-              <div class="branch-actions">
-                <button class="inquire-link" data-item="Half-Sarees" data-branch="Branch 1 (CSI Church)">Branch 1 WhatsApp</button>
-                <button class="inquire-link" data-item="Half-Sarees" data-branch="Branch 2 (Srinivas Nagar)">Branch 2 WhatsApp</button>
-              </div>
+            <div class="eyebrow">Traditional Wear</div>
+            <h3>Half-Sarees</h3>
+            <div class="price-tag">As per design</div>
+            <p>Classic half-saree collections suited for festive occasions and traditional ceremonies.</p>
+            <hr class="divider" />
+            <div class="stock-label">Check stock by branch:</div>
+            <div class="wa-row">
+              <a class="btn-wa" href="https://wa.me/919966576087?text=Hi%20New%20Imam%20Designers%20(Branch%201),%20please%20share%20Half-Sarees%20stock." target="_blank" rel="noopener noreferrer">Branch 1 WhatsApp</a>
+              <a class="btn-wa" href="https://wa.me/919912773809?text=Hi%20New%20Imam%20Designers%20(Branch%202),%20please%20share%20Half-Sarees%20stock." target="_blank" rel="noopener noreferrer">Branch 2 WhatsApp</a>
             </div>
           </div>
         </article>
 
-        <article class="card" data-category="festive daily">
+        <article class="card collection-item" data-category="festive">
           <div class="photo-slot">
-            <!-- Add dress photo later: <img src="three-piece-set.png" alt="Fancy 3-Piece Sets" /> -->
-            <strong>Dress Photo Slot: Fancy 3-Piece Sets</strong>
-            <span>Ready to add dress photo later</span>
+            <div class="slot-title">Dress Photo Slot: Fancy 3-Piece Sets</div>
+            <div class="slot-sub">Ready to add dress photo later</div>
           </div>
           <div class="card-body">
-            <div>
-              <span class="card-tag">Value Tiers</span>
-              <h3>Fancy 3-Piece Sets</h3>
-              <div class="price">Starting around ₹599 – ₹900</div>
-              <p>Coordinated three-piece dress sets in budget-friendly price tiers for daily and occasion wear.</p>
-            </div>
-            <div class="card-footer">
-              <span>Check stock by branch:</span>
-              <div class="branch-actions">
-                <button class="inquire-link" data-item="Fancy 3-Piece Sets" data-branch="Branch 1 (CSI Church)">Branch 1 WhatsApp</button>
-                <button class="inquire-link" data-item="Fancy 3-Piece Sets" data-branch="Branch 2 (Srinivas Nagar)">Branch 2 WhatsApp</button>
-              </div>
+            <div class="eyebrow">Value Tiers</div>
+            <h3>Fancy 3-Piece Sets</h3>
+            <div class="price-tag">Starting around ₹599 – ₹900</div>
+            <p>Coordinated three-piece dress sets in budget-friendly price tiers for daily and occasion wear.</p>
+            <hr class="divider" />
+            <div class="stock-label">Check stock by branch:</div>
+            <div class="wa-row">
+              <a class="btn-wa" href="https://wa.me/919966576087?text=Hi%20New%20Imam%20Designers%20(Branch%201),%20please%20share%20Fancy%203-Piece%20Sets%20stock." target="_blank" rel="noopener noreferrer">Branch 1 WhatsApp</a>
+              <a class="btn-wa" href="https://wa.me/919912773809?text=Hi%20New%20Imam%20Designers%20(Branch%202),%20please%20share%20Fancy%203-Piece%20Sets%20stock." target="_blank" rel="noopener noreferrer">Branch 2 WhatsApp</a>
             </div>
           </div>
         </article>
 
-        <article class="card" data-category="party">
+        <article class="card collection-item" data-category="party">
           <div class="photo-slot">
-            <!-- Add dress photo later: <img src="party-coat-model.png" alt="Party Wear, Crop Tops & Coat Models" /> -->
-            <strong>Dress Photo Slot: Party &amp; Coat Models</strong>
-            <span>Ready to add dress photo later</span>
+            <div class="slot-title">Dress Photo Slot: Party Wear, Crop Tops &amp; Coat Models</div>
+            <div class="slot-sub">Ready to add dress photo later</div>
           </div>
           <div class="card-body">
-            <div>
-              <span class="card-tag">Party &amp; Trendy</span>
-              <h3>Party Wear, Crop Tops &amp; Coat Models</h3>
-              <div class="price">As per design</div>
-              <p>Modern party wear dresses, crop tops, and coat-model designs for standout looks.</p>
-            </div>
-            <div class="card-footer">
-              <span>Check stock by branch:</span>
-              <div class="branch-actions">
-                <button class="inquire-link" data-item="Party Wear & Coat-Model Dresses" data-branch="Branch 1 (CSI Church)">Branch 1 WhatsApp</button>
-                <button class="inquire-link" data-item="Party Wear & Coat-Model Dresses" data-branch="Branch 2 (Srinivas Nagar)">Branch 2 WhatsApp</button>
-              </div>
+            <div class="eyebrow">Party &amp; Trendy</div>
+            <h3>Party Wear, Crop Tops &amp; Coat Models</h3>
+            <div class="price-tag">As per design</div>
+            <p>Modern party wear dresses, crop tops, and coat-model designs for standout looks.</p>
+            <hr class="divider" />
+            <div class="stock-label">Check stock by branch:</div>
+            <div class="wa-row">
+              <a class="btn-wa" href="https://wa.me/919966576087?text=Hi%20New%20Imam%20Designers%20(Branch%201),%20please%20share%20Party%20Wear%20stock." target="_blank" rel="noopener noreferrer">Branch 1 WhatsApp</a>
+              <a class="btn-wa" href="https://wa.me/919912773809?text=Hi%20New%20Imam%20Designers%20(Branch%202),%20please%20share%20Party%20Wear%20stock." target="_blank" rel="noopener noreferrer">Branch 2 WhatsApp</a>
             </div>
           </div>
         </article>
 
-        <article class="card" data-category="festive">
+        <article class="card collection-item" data-category="festive">
           <div class="photo-slot">
-            <!-- Add dress photo later: <img src="embroidered-suits.png" alt="Embroidered & Printed Salwar Sets" /> -->
-            <strong>Dress Photo Slot: Embroidered &amp; Printed Suits</strong>
-            <span>Ready to add dress photo later</span>
+            <div class="slot-title">Dress Photo Slot: Embroidered &amp; Printed Salwar Sets</div>
+            <div class="slot-sub">Ready to add dress photo later</div>
           </div>
           <div class="card-body">
-            <div>
-              <span class="card-tag">Festive &amp; Occasion</span>
-              <h3>Embroidered &amp; Printed Salwar Sets</h3>
-              <div class="price">As per design</div>
-              <p>Floral embroidery, printed kurtas, and coordinated dupattas in rose pink, teal, rust orange, and cream.</p>
-            </div>
-            <div class="card-footer">
-              <span>Check stock by branch:</span>
-              <div class="branch-actions">
-                <button class="inquire-link" data-item="Embroidered & Printed Salwar Sets" data-branch="Branch 1 (CSI Church)">Branch 1 WhatsApp</button>
-                <button class="inquire-link" data-item="Embroidered & Printed Salwar Sets" data-branch="Branch 2 (Srinivas Nagar)">Branch 2 WhatsApp</button>
-              </div>
+            <div class="eyebrow">Festive &amp; Occasion</div>
+            <h3>Embroidered &amp; Printed Salwar Sets</h3>
+            <div class="price-tag">As per design</div>
+            <p>Floral embroidery, printed kurtas, and coordinated dupattas in rose pink, teal, rust orange, and cream.</p>
+            <hr class="divider" />
+            <div class="stock-label">Check stock by branch:</div>
+            <div class="wa-row">
+              <a class="btn-wa" href="https://wa.me/919966576087?text=Hi%20New%20Imam%20Designers%20(Branch%201),%20please%20share%20Salwar%20Sets%20stock." target="_blank" rel="noopener noreferrer">Branch 1 WhatsApp</a>
+              <a class="btn-wa" href="https://wa.me/919912773809?text=Hi%20New%20Imam%20Designers%20(Branch%202),%20please%20share%20Salwar%20Sets%20stock." target="_blank" rel="noopener noreferrer">Branch 2 WhatsApp</a>
             </div>
           </div>
         </article>
 
-        <article class="card" data-category="daily">
+        <article class="card collection-item" data-category="daily">
           <div class="photo-slot">
-            <!-- Add dress photo later: <img src="daily-kalamkari.png" alt="Daily Wear, Kalamkari, Free-Size & Feeding Wear" /> -->
-            <strong>Dress Photo Slot: Daily, Kalamkari &amp; Special Wear</strong>
-            <span>Ready to add dress photo later</span>
+            <div class="slot-title">Dress Photo Slot: Daily Wear, Kalamkari, Free-Size &amp; Feeding Wear</div>
+            <div class="slot-sub">Ready to add dress photo later</div>
           </div>
           <div class="card-body">
-            <div>
-              <span class="card-tag">Everyday Comfort</span>
-              <h3>Daily Wear, Kalamkari, Free-Size &amp; Feeding Wear</h3>
-              <div class="price">Combos from ₹999 • Select tops ₹150–₹400 • Sets ₹350</div>
-              <p>2-piece kurta sets, Kalamkari tops, free-size dresses, feeding tops &amp; sets, and special offer pieces.</p>
-            </div>
-            <div class="card-footer">
-              <span>Check stock by branch:</span>
-              <div class="branch-actions">
-                <button class="inquire-link" data-item="Daily Wear & Special Styles" data-branch="Branch 1 (CSI Church)">Branch 1 WhatsApp</button>
-                <button class="inquire-link" data-item="Daily Wear & Special Styles" data-branch="Branch 2 (Srinivas Nagar)">Branch 2 WhatsApp</button>
-              </div>
+            <div class="eyebrow">Everyday Comfort</div>
+            <h3>Daily Wear, Kalamkari, Free-Size &amp; Feeding Wear</h3>
+            <div class="price-tag">Combos from ₹999 • Select tops ₹150–₹400 • Sets ₹350</div>
+            <p>2-piece kurta sets, Kalamkari tops, free-size dresses, feeding tops &amp; sets, and special offer pieces.</p>
+            <hr class="divider" />
+            <div class="stock-label">Check stock by branch:</div>
+            <div class="wa-row">
+              <a class="btn-wa" href="https://wa.me/919966576087?text=Hi%20New%20Imam%20Designers%20(Branch%201),%20please%20share%20Daily%20Wear%20stock." target="_blank" rel="noopener noreferrer">Branch 1 WhatsApp</a>
+              <a class="btn-wa" href="https://wa.me/919912773809?text=Hi%20New%20Imam%20Designers%20(Branch%202),%20please%20share%20Daily%20Wear%20stock." target="_blank" rel="noopener noreferrer">Branch 2 WhatsApp</a>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Offers Section -->
-    <section id="offers">
-      <div class="section-header">
-        <div>
-          <h2>Popular Combo &amp; Budget Highlights</h2>
-          <p>Check in-store or message on WhatsApp for current availability and offers.</p>
-        </div>
-      </div>
-      <div class="visit-grid">
-        <div class="info-box">
-          <div>
+    <!-- Popular Combo & Budget Highlights -->
+    <section id="combos" class="section-block">
+      <h2 class="section-title">Popular Combo &amp; Budget Highlights</h2>
+      <p class="section-subtitle">Check in-store or message on WhatsApp for current availability and offers.</p>
+
+      <div class="grid-2">
+        <div class="card combo-card">
+          <div class="card-body">
             <h3>2-Piece Kurta Set Combo</h3>
-            <div class="price">3 Sets for ₹999</div>
-            <p class="muted">Easy everyday wear sets available in combo offers alongside single-set options.</p>
+            <div class="combo-price">3 Sets for ₹999</div>
+            <p>Easy everyday wear sets available in combo offers alongside single-set options.</p>
           </div>
         </div>
-        <div class="info-box">
-          <div>
+        <div class="card combo-card">
+          <div class="card-body">
             <h3>Daily Wear Tops Combo</h3>
-            <div class="price">5 Tops for ₹999</div>
-            <p class="muted">Great value on daily tops, plus Kalamkari, free-size, and feeding options in store.</p>
+            <div class="combo-price">5 Tops for ₹999</div>
+            <p>Great value on daily tops, plus Kalamkari, free-size, and feeding options in store.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Branches & Maps Section -->
-    <section id="visit">
-      <div class="section-header">
-        <div>
-          <h2>Our Branches &amp; Maps in Allagadda</h2>
-          <p>Open every day (Monday – Sunday) from 9:00 AM – 9:00 PM.</p>
+    <!-- Branches & Maps -->
+    <section id="branches" class="section-block">
+      <h2 class="section-title">Our Branches &amp; Maps in Allagadda</h2>
+      <p class="section-subtitle">Open every day (Monday – Sunday) from 9:00 AM – 9:00 PM.</p>
+
+      <div class="grid-2">
+        <!-- Shop 1 -->
+        <div class="card">
+          <div class="photo-slot">
+            <img src="shop1.png" alt="Shop 1 CSI Church Allagadda" />
+          </div>
+          <div class="card-body">
+            <h3>Shop 1 — CSI Church</h3>
+            <div class="branch-meta">
+              <p><strong>Opened:</strong> November 12, 2020</p>
+              <p><strong>Opposite CSI Church / Near CSI Town Church</strong></p>
+              <p>Allagadda, Andhra Pradesh 518543</p>
+              <p><strong>Hours:</strong> Mon – Sun, 9:00 AM – 9:00 PM</p>
+            </div>
+            <div class="map-card">
+              <iframe
+                title="Shop 1 NEW IMAM DESIGNERS Map"
+                src="https://maps.google.com/maps?q=15.1314386,78.5113678&z=16&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <div class="map-footer">
+                <a href="https://www.google.com/maps/place/NEW+IMAM+DESIGNERS/@15.1317353,78.5076198,16z/data=!4m7!3m6!1s0x3bb45df71c67e9ed:0xbab39e5643a8a4a8!4b1!8m2!3d15.1314386!4d78.5113678!16s%2Fg%2F11rb26kxhr?hl=en-GB&entry=ttu&g_ep=EgoyMDI2MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-map">
+                  Open Shop 1 in Maps ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop 2 -->
+        <div class="card">
+          <div class="photo-slot">
+            <div class="slot-title">Shop 2 Photo Slot</div>
+            <div class="slot-sub">Ready to add Shop 2 photo later</div>
+          </div>
+          <div class="card-body">
+            <h3>Shop 2 — Srinivas Nagar</h3>
+            <div class="branch-meta">
+              <p><strong>Opened:</strong> July 29, 2026</p>
+              <p><strong>Srinivas Nagar / KVSR College Street, Allagadda</strong></p>
+              <p>In the lane next to Lakshmi Bakery, beside the RTC Bus Stand.</p>
+              <p><strong>Hours:</strong> Mon – Sun, 9:00 AM – 9:00 PM</p>
+            </div>
+            <div class="map-card">
+              <iframe
+                title="Shop 2 Srinivas Nagar RTC Bus Stand Map"
+                src="https://maps.google.com/maps?q=Srinivas+Nagar+Lakshmi+Bakery+RTC+Bus+Stand+Allagadda&z=16&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <div class="map-footer">
+                <a href="https://maps.google.com/?q=Srinivas+Nagar+Lakshmi+Bakery+RTC+Bus+Stand+Allagadda" target="_blank" rel="noopener noreferrer" class="btn-map">
+                  Open Shop 2 in Maps ↗
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="visit-grid">
-        <div class="info-box">
-          <div class="photo-slot branch-photo">
-            <img src="shop1.png" alt="New Imam Designers Branch 1 storefront near CSI Church in Allagadda" />
-          </div>
-          <div>
-            <h3>Branch 1 — CSI Church</h3>
-            <p><strong>Opened:</strong> November 12, 2020</p>
-            <p><strong>Opposite CSI Church / Near CSI Town Church</strong></p>
-            <p class="muted">Allagadda, Andhra Pradesh 518543</p>
-            <p class="muted" style="margin-top: 0.4rem;"><strong>Hours:</strong> Mon – Sun, 9:00 AM – 9:00 PM</p>
-          </div>
-          <div class="map-frame">
-            <iframe
-              title="Branch 1 CSI Church Allagadda Map"
-              src="https://www.google.com/maps?q=CSI+Town+Church+Allagadda+Andhra+Pradesh+518543&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          <div>
-            <button class="btn btn-primary inquire-link" data-item="General Stock Inquiry" data-branch="Branch 1 (CSI Church)">
-              WhatsApp Branch 1
-            </button>
-          </div>
-        </div>
+    <!-- Direct Contact & About Imam Designer -->
+    <section id="about" class="section-block">
+      <h2 class="section-title">About Imam Designer</h2>
+      <p class="section-subtitle">Allagadda best women's wear — our story, milestones, and commitment.</p>
 
-        <div class="info-box">
-          <div class="photo-slot branch-photo">
-            <strong>Shop 2 Photo Slot</strong>
-            <span>Ready to add Shop 2 photo later</span>
-          </div>
-          <div>
-            <h3>Branch 2 — Srinivas Nagar</h3>
-            <p><strong>Opened:</strong> July 29, 2026</p>
-            <p><strong>Srinivas Nagar / KVSR College Street, Allagadda</strong></p>
-            <p class="muted">In the lane next to Lakshmi Bakery, beside the RTC Bus Stand.</p>
-            <p class="muted" style="margin-top: 0.4rem;"><strong>Hours:</strong> Mon – Sun, 9:00 AM – 9:00 PM</p>
-          </div>
-          <div class="map-frame">
-            <iframe
-              title="Branch 2 Srinivas Nagar RTC Bus Stand Allagadda Map"
-              src="https://www.google.com/maps?q=APSRTC+Bus+Stand+Road+Allagadda+Andhra+Pradesh+518543&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          <div>
-            <button class="btn btn-primary inquire-link" data-item="General Stock Inquiry" data-branch="Branch 2 (Srinivas Nagar)">
-              WhatsApp Branch 2
-            </button>
-          </div>
-        </div>
-
-        <div class="info-box">
-          <div>
+      <div class="grid-2" style="margin-bottom: 24px;">
+        <div class="card">
+          <div class="card-body">
             <h3>Direct Contact &amp; Channels</h3>
-            <p><strong>Phone 1:</strong> <a href="tel:+919966576087">+91 99665 76087</a></p>
-            <p><strong>Phone 2:</strong> <a href="tel:+919912773809">+91 99127 73809</a></p>
-            <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@ImamdesignerALLAGADDA" target="_blank" rel="noopener noreferrer">Imam Designer Allagadda</a></p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/new_imamdesigner_allagadda/" target="_blank" rel="noopener noreferrer">@new_imamdesigner_allagadda</a></p>
-            <p class="muted" style="margin-top: 0.5rem;">
-              Call or message on WhatsApp to check latest arrivals, sizes, and combo deals at either branch.
-            </p>
+            <ul class="contact-list">
+              <li><strong>Phone 1:</strong> <a href="tel:+919966576087">+91 99665 76087</a></li>
+              <li><strong>Phone 2:</strong> <a href="tel:+919912773809">+91 99127 73809</a></li>
+              <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@ImamdesignerALLAGADDA-jb" target="_blank" rel="noopener noreferrer">Imam Designer Allagadda</a></li>
+              <li><strong>Instagram:</strong> <a href="https://www.instagram.com/new_imamdesigner_allagadda/" target="_blank" rel="noopener noreferrer">@new_imamdesigner_allagadda</a></li>
+            </ul>
+            <p>Call or message on WhatsApp to check latest arrivals, sizes, and combo deals at either branch.</p>
+            <div class="call-stack">
+              <a href="tel:+919966576087" class="btn btn-outline">Call +91 99665 76087</a>
+              <a href="tel:+919912773809" class="btn btn-outline">Call +91 99127 73809</a>
+            </div>
           </div>
-          <div class="btn-group">
-            <a href="tel:+919966576087" class="btn btn-secondary">Call +91 99665 76087</a>
-            <a href="tel:+919912773809" class="btn btn-secondary">Call +91 99127 73809</a>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Quick Store Highlights</h3>
+            <p>Fresh collections updated regularly for daily shoppers, festivals, and special occasions in Allagadda.</p>
+            <div class="wa-row">
+              <a href="https://www.youtube.com/@ImamdesignerALLAGADDA-jb" target="_blank" rel="noopener noreferrer" class="btn-wa">Watch Shorts on YouTube</a>
+              <a href="#branches" class="btn-wa">See Both Branches</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- About Imam Designer & Our Story -->
-    <section id="about">
-      <div class="section-header">
+      <div class="about-grid">
         <div>
-          <h2>About Imam Designer</h2>
-          <p>Allagadda best women’s wear — our story, milestones, and commitment.</p>
-        </div>
-      </div>
-
-      <div class="story-panel">
-        <div class="story-copy">
-          <h3>Our Story in Allagadda</h3>
-          <p>
-            New Imam Designers opened its first branch near CSI Church in Allagadda on November 12,
-            2020, with a clear aim: offering fresh, stylish, and comfortable women’s dresses for both
-            everyday wear and special celebrations.
+          <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 14px;">Our Story in Allagadda</h3>
+          <p style="margin-bottom: 14px;">
+            New Imam Designers opened its first branch near CSI Church in Allagadda on November 12, 2020, with a clear aim: offering fresh, stylish, and comfortable women's dresses for both everyday wear and special celebrations.
           </p>
           <p>
-            Backed by local shoppers across Allagadda, our journey grew from festive Shararas, silk
-            and Chanderi Anarkalis, Half-Sarees, and party wear to expanding with our second branch
-            in Srinivas Nagar on July 29, 2026.
+            Backed by local shoppers across Allagadda, our journey grew from festive Shararas, silk and Chanderi Anarkalis, Half-Sarees, and party wear to expanding with our second branch in Srinivas Nagar on July 29, 2026.
           </p>
         </div>
 
-        <ul class="story-points">
-          <li>
-            <strong>First Branch — November 12, 2020</strong>
-            Started near CSI Church in Allagadda, building a loyal following for trendy ladies’ dresses and daily styles.
-          </li>
-          <li>
-            <strong>Second Branch — July 29, 2026</strong>
-            Expanded to Srinivas Nagar / KVSR College Street near Lakshmi Bakery and the RTC Bus Stand to serve even more shoppers.
-          </li>
-          <li>
-            <strong>Occasion &amp; Everyday Value</strong>
-            Combines festive picks and party models with budget-friendly daily wear, tops, and kurta set combos.
-          </li>
-          <li>
-            <strong>Open Every Day</strong>
-            Welcoming visitors Monday through Sunday from 9:00 AM to 9:00 PM, with updates on YouTube Shorts and Instagram.
-          </li>
-        </ul>
+        <div class="milestone-list">
+          <div class="milestone-box">
+            <h4>First Branch — November 12, 2020</h4>
+            <p>Started near CSI Church in Allagadda, building a loyal following for trendy ladies' dresses and daily styles.</p>
+          </div>
+          <div class="milestone-box">
+            <h4>Second Branch — July 29, 2026</h4>
+            <p>Expanded to Srinivas Nagar / KVSR College Street near Lakshmi Bakery and the RTC Bus Stand to serve even more shoppers.</p>
+          </div>
+          <div class="milestone-box">
+            <h4>Occasion &amp; Everyday Value</h4>
+            <p>Combines festive picks and party models with budget-friendly daily wear, tops, and kurta set combos.</p>
+          </div>
+          <div class="milestone-box">
+            <h4>Open Every Day</h4>
+            <p>Welcoming visitors Monday through Sunday from 9:00 AM to 9:00 PM, with updates on YouTube Shorts and Instagram.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> New Imam Designers, Allagadda. All rights reserved.</p>
+    &copy; 2026 New Imam Designers, Allagadda. All rights reserved.
   </footer>
 
   <script>
-    // Set current year
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Category filtering
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const cards = document.querySelectorAll("#collectionGrid .card");
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.collection-item');
 
     filterButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        filterButtons.forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
+      btn.addEventListener('click', () => {
+        filterButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
 
         const filter = btn.dataset.filter;
-        cards.forEach((card) => {
-          const categories = card.dataset.category.split(" ");
-          if (filter === "all" || categories.includes(filter)) {
-            card.style.display = "flex";
-          } else {
-            card.style.display = "none";
-          }
+        items.forEach((item) => {
+          const matches = filter === 'all' || item.dataset.category === filter;
+          item.style.display = matches ? '' : 'none';
         });
-      });
-    });
-
-    // Branch-specific WhatsApp inquiry
-    const defaultPhone = "919966576087";
-    document.querySelectorAll(".inquire-link").forEach((button) => {
-      button.addEventListener("click", () => {
-        const itemName = button.dataset.item || "Collection";
-        const branchName = button.dataset.branch || "Allagadda Store";
-        const message = `Hi New Imam Designers (${branchName}), I would like to check availability for ${itemName}.`;
-        const waUrl = `https://wa.me/${defaultPhone}?text=${encodeURIComponent(message)}`;
-        window.open(waUrl, "_blank", "noopener,noreferrer");
       });
     });
   </script>
